@@ -1,0 +1,16 @@
+## 2/9 Meeting Project
+Xiao esp32 Sense C6
+Pololu voltage regulator step down S7V8A
+Battery 6V (two 3V lithium batteries in the pack)
+2 FSR Sensors
+Temperature sensor TMP36
+Heart rate sensor MAX30102
+MOSFET 
+Heating pad
+Figure out the resistors yourself 
+
+
+Battery -> Voltage Regulator -> ESP32 -> sensors and MOSFET
+Battery -> MOSFET -> Heating pad
+
+Heart rate pulse oximeter: https://www.instructables.com/Guide-to-Using-MAX30102-Heart-Rate-and-Oxygen-Sens/ 
