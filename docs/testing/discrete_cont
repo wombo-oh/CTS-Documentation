@@ -1,0 +1,56 @@
+# FSR Testing Protocol (Discrete + Continuous)
+https://electronics.stackexchange.com/questions/686988/need-help-calibrating-force-sensing-resistor-fsr 
+https://www.sciencedirect.com/topics/engineering/interface-circuit 
+https://www.sensorprod.com/how-does-a-force-sensing-resistor-fsr-work/?srsltid=AfmBOopH7ue1iQrnc_rEMPcrbbhF_N2PMJTBmHpxiKtm97mGWAwpy0Rp 
+
+## Materials:
+Rod: Attached to fsr for S-hook to hang from
+Bucket: for water collection
+S-hook: to connect bucket handle to rod; normalizes force
+Peristaltic pump / water dispenser / garden hose: to provide steady flow of water into bucket
+Clamp: holds rod to surface(table) to prevent any movement as force increases
+Tape: for the fsr to stay stuck to rod
+FSR system
+
+## Continuous 
+Steps:
+Stabilize FSR on table, attached to glove and facing upwards. 
+Place T130X calculator in glove underneath FSR
+Attach the bucket to one end of the S-hook, and hook the other end onto the rod over the FSR.
+Calibrate peristaltic pump to desired speed (300 mL/min) diameter - 1 cm
+Place one end of tubing in the water reservoir and one end in the bucket, ensuring that the reservoir is above the bucket. 
+Run the program and allow for a few measurements to populate 
+Start pumping water and stop when desired.
+
+## Discrete
+Steps:
+Repeat steps 1-6 from continuous
+Pour water into the bucket in increments, taking measurements each time and recording readings. 
+
+## Data Collection Process
+*Have Microsoft Data Streamer add-in for Excel
+Go to Data Streamer tab in Excel
+Connect arduino uno to arduino IDE
+Verify and upload FSR code on arduino IDE
+“Connect Device” on Excel spreadsheet
+Press “Start Data” in Excel
+Press “Record Data”
+Start applying designated amount of pressure at second 15 until second 60
+Press “Stop Recording” after second 60
+Title csv. file
+Move csv. file to Google Drive
+
+## Analysis of Data
+Take the mass of the bucket, and plot it against the mystery fsr number !!! then figure out a model for the graph!!!. 
+
+# Order Supplies List
+MOSFET IRLZ44N 
+Amazon.com: ALLECIN Electronic Components
+
+Voltage Regulator Pololu
+Pololu 3.3V Step-Up/Step-Down Voltage Regulator S7V8F3
+
+Density formula: =mV → V=m
+Volumetric flow: q=Av where A is the cross sectional area of peristaltic cube and v is velocity of water
+Finding volume of water added: qt = vs = V (cancels out time to produce value of cm^3 aka V (volume))
+Finding mass of water added: m=qt 

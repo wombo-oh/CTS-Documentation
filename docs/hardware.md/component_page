@@ -1,0 +1,75 @@
+## Components List:
+5 FSR Sensors (https://www.youtube.com/watch?v=eW3SQCi0aTE)
+10 k ohm resistor to ground
+Imu
+Multi purpose for vibration/acceleration/position tracking
+https://randomnerdtutorials.com/esp32-mpu-6050-accelerometer-gyroscope-arduino/
+Heart rate
+
+Esp 32 microcontroller 
+For wireless control
+
+Potentiometer 
+
+Charging circuit
+Lithium LI pro
+3.7 V
+700 milli-Amp hours
+
+Xiao Sense (ESP-32)
+https://github.com/Seeed-Studio/OPL_Kicad_Library/blob/master/Seeed%20Studio%20XIAO%20Series%20Library/Seeed_Studio_XIAO_Series.kicad_sym 
+TMP36 (temperature sensor) X1 (on palm to monitor heat)
+https://www.snapeda.com/parts/TMP36GT9/Analog%20Devices/view-part/
+Open to other types of temp sensors (ones that can reach other areas of the hand)
+Maybe thermocouple amplifier
+10 pin header
+RP-C18.3-ST (Pressure Sensor) X5 (finger tips)
+Gy-521 MPU-6050 (Accelerometer) X1 (track palm movement)
+https://www.snapeda.com/parts/GY-521/GODREAM%20FORDREAM%20CO.,%20LIMITED/view-part/
+Potentiometer (from
+2 x https://www.snapeda.com/parts/ADS1115IDGSR/Texas%20Instruments/view-part/)
+
+
+Heart rate sensor
+link
+https://github.com/usini/usini_kicad_sensors/blob/main/usini_sensors.kicad_sym
+
+DHT11 Temperature/Humidity Sensor
+https://www.instructables.com/DHT11-temperature-and-Humidity-Sensor-Arduino-UNO-/
+
+Footprint:https://www.snapeda.com/parts/DHT11/UNIVERSAL-SOLDER%20Electronics%20Ltd/view-part/?ref=search&t=DHT11&ab_test_case=b 
+Connectivity to ESP32: https://www.instructables.com/DHT11-temperature-and-Humidity-Sensor-Arduino-UNO-/ 
+
+Palm FSR sensor: https://buyinterlinkelectronics.com/collections/new-standard-force-sensors/products/fsr-model-402
+
+Exercise Example: https://www.youtube.com/shorts/31tPBPr0mD0
+
+New plan:
+Have the heart rate sensor separate from the PCB
+Have it along the wrist for reading values
+Have the hardware team design a small silicone insert for comfort
+5 small FSR for the fingertips
+1 larger FSR for the palm of the hand (size still TBD)
+So 6 total FSR need to be connected to the PCB
+I’m thinking we just drill holes and solder the wires straight in the holes to make the PCB smaller
+We are using the humidity/temperature sensor instead and this one will be separate from the PCB
+Since we are saving space on the PCB, I think we can use a ADS1115 that is a through hole instead of a surface mount (it will be much easier to solder)
+MPU6050 will stay on the PCB (back of the hand)
+
+Need to find footprints for these:
+ADS1115
+Voltage Regulator
+Websites: 
+https://www.snapeda.com/
+https://componentsearchengine.com/part-view/S7V8F3/Pololu 
+https://www.ti.com/lit/ds/symlink/ads1015.pdf?ts=1761599830020&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1015%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-null-null-GPN_EN-cpc-pf-google-ww_en_cons%2526utm_content%253DADS1015%2526ds_k%253DADS1015%2526DCM%253Dyes%2526gclsrc%253Daw.ds%2526gad_source%253D1%2526gad_campaignid%253D14388345080%2526gclid%253DEAIaIQobChMI7sj-sKbFkAMVCq_uAR0hwSGUEAAYASAAEgJioPD_BwE
+
+## PCB Checklist: 
+XIAO esp32
+12 pin header for the 6 FSR sensors (Vin and GND for each)
+3 pin header for the temperature sensor
+4 pin header for the heart rate sensor
+4 pin header for the two batteries (Vin and GND for each)
+Gyroscope (MPU6050)
+Voltage Regulator
+ADS1115
