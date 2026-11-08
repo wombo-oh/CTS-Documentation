@@ -1,16 +1,19 @@
-# CTS Documentation
+# CTS Project Documentation
 
-Documentation and development progress for the CTS project.
-
-## Documentation
-
-The full project documentation is available in the [`docs/`](docs/) folder.
+Guys our documentation is kinda cooked so we're moving all our stuff over here. 
 
 ## Weekly Progress
+Track the team's development and decisions over time.
+- [Weekly Progress](weekly-progress/)
 
-Weekly development updates are recorded in [`docs/weekly-progress/`](docs/weekly-progress/).
+## Hardware
+Documentation for the electronics, sensors, and PCB design.
+- [Hardware](hardware/)
 
-## Project Structure
+## Firmware
+Microcontroller code.
+- [Firmware](firmware/)
 
-- `docs/` — project documentation and weekly progress
-- `README.md` — project overview
+## Testing
+Test procedures, Excel data, graphs, etc.
+- [Testing](testing/)

@@ -1,0 +1,48 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* General layout */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+/* Main headings */
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+}
+
+/* Documentation sections */
+h3 {
+  margin-top: 1.8rem;
+}
+
+/* Code blocks */
+pre {
+  border-radius: 8px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.7rem;
+  border-bottom: 1px solid #e5e7eb;
+}
