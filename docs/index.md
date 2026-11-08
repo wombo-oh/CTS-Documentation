@@ -19,7 +19,4 @@ Microcontroller code.
 
 ## Testing
 Test procedures, Excel data, graphs, etc.
-- [Heart Rate Sensor Testing](Heart_Testing/)
-- [FSR Old Testing](Old_Testing/)
-- [Testing Procedure](Procedure/)
-- [FSR New Testing](New_Testing/)
+- [Discrete & Continuous FSR Testing](testing/)
