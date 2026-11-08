@@ -1,7 +1,3 @@
-# CTS Project Documentation
-Guys our documentation is kinda cooked so we're moving all our stuff over here. 
-## Budgeting & Supplies 
-
 ## Weekly Progress
 Track the team's development and decisions over time.
 - [Weekly Progress](weekly-progress/)
