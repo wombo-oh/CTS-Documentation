@@ -1,5 +1,4 @@
 # CTS Project Documentation
-
 Guys our documentation is kinda cooked so we're moving all our stuff over here. 
 ## Budgeting & Supplies 
 
