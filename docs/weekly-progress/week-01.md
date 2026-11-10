@@ -1,5 +1,5 @@
 # Week 1 — November 2026
-hhhhh
+
 ## Goals
 
 -
